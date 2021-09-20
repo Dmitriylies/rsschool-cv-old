@@ -76,3 +76,4 @@ cover.forEach((btn, i) => {
             }
         });
     }
+console.log('Total grade for the task - 150. (Doesn`t have video)')
