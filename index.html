@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/equilibrium-gray-dark.min.css">
   <title>Dmitriy Liesnykh</title>
 </head>
 
@@ -14,44 +15,101 @@
     <main class="main"> 
         <div class="container">
             <header class="header">
-                <h1 class="header__name"><a href="https://t.me/Liesnykh_Dmitriy" target="_blank">Dmitriy Liesnykh</a></h1>
-                <div class="heder__conatacts">
-                    <a class="heder__conatacts-tel" href="tel:+380665280686">+38(066)-528-06-86</a>
-                    <a class="heder__conatacts-mail" href="mailto:forther.686@gmail.com">forther.686@gmail.com</a>
+                <div class="header__body">
+                    <h1 class="header__name">Dmitriy Liesnykh</h1>
+                    <ul class="heder__conatacts">
+                        <li><a class="heder__conatacts-tel" href="tel:+380665280686">+38(066)-528-06-86</a></li>
+                        <li><a class="heder__conatacts-mail" href="mailto:forther.686@gmail.com">forther.686@gmail.com</a></li>
+                    </ul>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="nav__item"><a class="js-scroll" href="#about">About me</a></li>
+                            <li class="nav__item"><a class="js-scroll" href="#works">Works</a></li>
+                            <li class="nav__item"><a class="js-scroll" href="#contacts">Contacts</a></li>
+                            <li class="nav__item"><a class="js-scroll" href="#skills">Skills</a></li>
+                            <li class="nav__item"><a class="js-scroll" href="#education">Education</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                
             </header>
+            
             <div class="wrapper">
-                <section class="about">
-                    <div class="about__photo">
-                        <img class="about__img" src="img/main_1.jpg" alt="My photo">
+                <div class="aside">
+                    <div class="about">
+                        <figure class="about__photo">
+                            <img class="about__img" src="img/main_2.jpg" alt="Dmitriy Liesnykh">
+                        </figure>
+                        <div class="about__desc">
+                            <p class="about__desc-text" id="about">
+                                Hello, I'm trainee Front-end Developer from Ukraine. Work at a bank, at the same time studying IT in order 
+                                to change my profession in the near future and become qualified specialists in this field.
+                                My main goal is to be in demand in the modern world and independent from the country!
+                            </p>
+                        </div>
                     </div>
-                    <div class="about__desc">
-                        <p class="about__desc-text">
-                            Hello, I'm trainee Front-end Developer from Ukraine. Work at a bank, at the same time studying IT in order 
-                            to change my profession in the near future and become qualified specialists in this field.
-                            My main goal is to be in demand in the modern world and independent from the country!
-                        </p>
-                    </div>
-                    <div class="about__works">
+                    <div class="about__works" id="works">
                         <h3 class="about__works-title">Works</h3>
                         <ul class="works__list">
                             <li class="works__list-item">
-                                <p><a href="https://dmitriylies.github.io/Travel_landing/#articles" target="_blank">Travel landing</a></p>
+                                <div class="works__hide">
+                                    <h5 class="hide__title">Art-site</h5>
+                                    <ul class="hide__list">
+                                        <li class="hide__js">JavaScript 71.7%</li> 
+                                        <li class="hide__html">HTML 9.7%</li>
+                                        <li class="hide__css">CSS 9.6%</li>
+                                    </ul>
+                                </div>
+                                <a class="works__link" href="https://dmitriylies.github.io/Travel_landing/#articles" target="_blank">
+                                    <img class="works__img" src="img/work-art.jpg" alt="work-art">
+                                </a>
                             </li>
                             <li class="works__list-item">
-                                <p><a href="https://dmitriylies.github.io/Bouncy/" target="_blank">Bouncy landing</a></p>
+                                <div class="works__hide">
+                                    <h5 class="hide__title">Bouncy</h5>
+                                    <ul class="hide__list">
+                                        <li class="hide__html">HTML 56.3%</li>
+                                        <li class="hide__css">CSS 37.7%</li>
+                                        <li class="hide__js">JavaScript 6.0%</li> 
+                                    </ul>
+                                </div>
+                                <a class="works__link" href="https://dmitriylies.github.io/Bouncy/" target="_blank">
+                                    <img class="works__img" src="img/work-cafe.jpg" alt="work-code-cafe">
+                                </a>
                             </li>
                             <li class="works__list-item">
-                                <p><a href="https://dmitriylies.github.io/-picture.art/" target="_blank">Picture.art</a></p>
+                                <div class="works__hide">
+                                    <h5 class="hide__title">Travel-landing</h5>
+                                    <ul class="hide__list">
+                                        <li class="hide__css">CSS 52.3% </li>
+                                        <li class="hide__html">HTML 43.3%</li>
+                                        <li class="hide__js">JavaScript 4.4%</li> 
+                                    </ul>
+                                </div>
+                                <a class="works__link" href="https://dmitriylies.github.io/-picture.art/" target="_blank">
+                                    <img class="works__img" src="img/work-travel.jpg" alt="work-travel">
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                </section>
-
+                </div>
+                </div>
+                
                 <section class="expirience">
-                    <div class="skills block-wrap">
-                        <h3 class="skills__title title">Skills</h3>
+                    <div class="expirience__contacts block-wrap" id="contacts">
+                        <h4 class="contacts__title title">Contacts</h4>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <p>Phone:</p>
+                                <a class="conatacts__tel" href="tel:+380665280686">+38(066)-528-06-86</a></li>
+                            <li class="contacts__item"><p>Mail:</p><a class="conatacts__mail" href="mailto:forther.686@gmail.com">forther.686@gmail.com</a></li>
+                            <li class="contacts__item"><p>Telegram:</p><a class="conatacts__telegram" href="https://t.me/Liesnykh_Dmitriy" target="_blank">@Liesnykh_Dmitriy</a></li>
+                            <li class="contacts__item"><p>Instagram:</p><a class="conatacts__telegram" href="https://www.instagram.com/liesnykh_dmitriy/" target="_blank">@liesnykh_dmitriy</a></li>
+                        </ul>
+                    </div>
+                    <div class="skills block-wrap" id="skills">
+                        <h4 class="skills__title title">Skills</h4>
                         <ul class="skills__list">
                             <li class="skills__list-item">
                                 <p>HTML</p>
@@ -74,7 +132,7 @@
                         </ul>
                     </div>
                     <div class="languages block-wrap">
-                        <h3 class="languages__title title">Languages</h3>
+                        <h4 class="languages__title title">Languages</h4>
                         <ul class="languages__list">
                             <li class="languages__list-item">
                                 <p>English</p>
@@ -96,8 +154,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="education block-wrap">
-                        <h3 class="education__title title">Education</h3>
+                    <div class="education block-wrap" id="education">
+                        <h4 class="education__title title">Education</h4>
                         <div class="education__item">
                             <a class="place" href="https://www.nmu.org.ua/ua/" target="_blank">National Technical University Dnipro Polytechnic</a>
                             <p class="major">Programme Subject Area: Mining</p>
@@ -108,44 +166,68 @@
                         
                     </div>
                     <div class="courses block-wrap">
-                        <h3 class="courses__title title">Courses</h3>
+                        <h4 class="courses__title title">Courses</h4>
 
                         <div class="courses__item">
-                            <a class="place" href="https://www.udemy.com/" target="_blank">Udemy</a>
+                            <p class="place">Udemy</p>
                             <p><a class="major" href="https://www.udemy.com/course/javascript_full/" target="_blank">JavaScript + React</a></p>
                             <p class="period">
                                 2021-2021
                             </p>
                         </div>
                         <div class="courses__item">
-                                <a class="place" href="https://www.udemy.com/" target="_blank">Udemy</a>
+                                <p class="place">Udemy</p>
                                 <p><a class="major" href="https://www.udemy.com/course/javascript_practice/" target="_blank">Practical JavaScript (Advanced)</a></p>
                                 <p class="period">
                                     2021-2021
                                 </p>
                         </div>
                         <div class="courses__item">
-                            <a class="place" href="https://rollingscopes.com/" target="_blank">The Rolling Scopes</a>
+                            <p class="place">The Rolling Scopes</p>
                             <p><a class="major" href="https://rs.school/js/" target="_blank">JavaScript/Front-end</a></p>
                             <p class="period">
                                 2021-2022
                             </p>
                         </div>
                     </div>
-                    <footer class="footer">
-                        <div class="footer__wrap">
-                            <a class="footer__link" href="https://rs.school/js/" target="_blank">
-                                <img class="footer__img" src="img/icons/rs_school.svg" alt="rs school link">
-                            </a>
-                            <a class="footer__link" href="https://github.com/Dmitriylies" target="_blank">
-                                <img class="footer__img" src="img/icons/github.svg" alt="rs school link">
-                            </a>
-                        </div>
-                    </footer>
+                    <pre >
+                        <code class="code">
+function isPalindrome(line) {
+    let a = line.toString().split("").reverse().join("");
+    if (line == a) {
+        return true;
+    } else{
+        return false;
+    }
+    }
+                        </code>
+                    </pre>
+                    
                 </section>
             </div>
+            <footer class="footer">
+                <div class="footer__wrap">
+                    <a class="footer__link" href="https://rs.school/js/" target="_blank">
+                        <img class="footer__img footer__item" src="img/icons/rs_school.svg" alt="rs school link">
+                    </a>
+                    <p class="footer__item">2021</p>
+                    <div class="footer__links">
+                        <a class="footer__link footer__github" href="https://t.me/Liesnykh_Dmitriy" target="_blank">
+                            <img class="footer__img" src="img/icons/telegram.svg" alt="Telegram">
+                        </a>
+                        <a class="footer__link footer__github" href="https://github.com/Dmitriylies" target="_blank">
+                            <img class="footer__img" src="img/icons/github.svg" alt="rs school link">
+                        </a>
+                       
+                    </div>
+                   
+                </div>
+            </footer>
             </div>
     </main>
+    <script src="js/main.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
 
